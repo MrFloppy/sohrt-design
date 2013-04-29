@@ -1,0 +1,74 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "base";
+@import "compass/reset";
+@import "compass/css3/border-radius";
+@import "compass/css3/box-shadow";
+
+@import "../stylesheets/fontello.css";
+
+/* -------------------------------------------------------------------------*/
+/* Layout */
+
+body {
+  background-image:url("../image/yellow_bg.png");
+}
+
+#page {
+  @include container;
+  @include susy-grid-background;
+  //border: 1px solid black;
+  //@include border-radius(10px);
+  margin-top: 1em;
+  padding: 0;
+  //overflow: hidden;
+  //border: solid 10px #000; /* fallback for browsers that don't understand rgba */
+  background-color: rgba(255,255,255,0.4);/* slighly transparent white */
+  border: solid 10px rgba(255,255,255,0.4); /*Very transparent black*/
+}
+
+#navigation {
+  background-color: darkgrey;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 2.5em;
+  height: 100%;
+  @include single-box-shadow;
+
+  li {
+    padding: 1em 0 1em 0.25em;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+header,
+section,
+footer {
+  @include span-columns(12);
+  p {
+    padding-right: 1em;
+  }
+}
+
+section {
+  p {
+    margin-bottom: 1em;
+  }
+}
+
+#logo {
+  img {
+    width: 100%;
+  }
+}
+
+//Helper Classes
+.fll {
+  float: left;
+}

@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+ 
+.icon-cog:before { content: '\2699'; } /* '⚙' */
+.icon-rss:before { content: '\e73a'; } /* '' */
+.icon-facebook-rect:before { content: '\f301'; } /* '' */
+.icon-twitter-bird:before { content: '\f303'; } /* '' */
+.icon-linkedin-rect:before { content: '\f312'; } /* '' */
+.icon-user:before { content: '👤'; } /* '\1f464' */
