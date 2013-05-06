@@ -1,4 +1,4 @@
-su-design
+sohrt-design
 =========
 
-start-upper wordpress design
+New design for my wordpress blog. ATM no wordpress to see here :(
