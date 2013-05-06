@@ -67,11 +67,66 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* -------------------------------------------------------------------------*/
 /* Layout */
 /* line 14, ../sass/screen.scss */
-body {
-  background-image: url("../image/yellow_bg.png");
+html {
+  font-size: 1.1875em;
+  /* 1 */
+  -webkit-text-size-adjust: 1.1875em;
+  /* 2 */
+  -ms-text-size-adjust: 1.1875em;
+  /* 2 */
 }
 
-/* line 18, ../sass/screen.scss */
+/* line 20, ../sass/screen.scss */
+body {
+  background-image: url("../image/yellow_bg.png");
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.632em;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* line 28, ../sass/screen.scss */
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.67em 0;
+}
+
+/* line 34, ../sass/screen.scss */
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.83em 0;
+}
+
+/* line 40, ../sass/screen.scss */
+h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+/* line 46, ../sass/screen.scss */
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1.33em 0;
+}
+
+/* line 52, ../sass/screen.scss */
+h5 {
+  font-size: 0.83em;
+  font-weight: bold;
+  margin: 1.67em 0;
+}
+
+/* line 58, ../sass/screen.scss */
+h6 {
+  font-size: 0.75em;
+  font-weight: bold;
+  margin: 2.33em 0;
+}
+
+/* line 64, ../sass/screen.scss */
 #page {
   *zoom: 1;
   max-width: 59em;
@@ -88,7 +143,7 @@ body {
   -webkit-background-clip: content-box;
   -moz-background-clip: content-box;
   background-clip: content-box;
-  margin-top: 1em;
+  margin: 1em auto;
   padding: 0;
   background-color: rgba(255, 255, 255, 0.4);
   /* slighly transparent white */
@@ -102,7 +157,7 @@ body {
   clear: both;
 }
 
-/* line 31, ../sass/screen.scss */
+/* line 73, ../sass/screen.scss */
 #navigation {
   background-color: darkgrey;
   left: 0px;
@@ -114,15 +169,14 @@ body {
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
-/* line 40, ../sass/screen.scss */
+/* line 82, ../sass/screen.scss */
 #navigation li {
   padding: 1em 0 1em 0.25em;
 }
-/* line 44, ../sass/screen.scss */
+/* line 86, ../sass/screen.scss */
 #navigation .submenu {
   background-color: white;
   display: none;
-  height: 20.5em;
   left: 2.5em;
   position: fixed;
   top: 0;
@@ -131,13 +185,13 @@ body {
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
-/* line 55, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 #navigation a {
   text-decoration: none;
   color: white;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 105, ../sass/screen.scss */
 header,
 section,
 footer {
@@ -146,24 +200,29 @@ footer {
   margin-right: 1.69492%;
   display: inline;
 }
-/* line 65, ../sass/screen.scss */
+/* line 107, ../sass/screen.scss */
 header p,
 section p,
 footer p {
   padding-right: 1em;
 }
 
-/* line 71, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 section p {
   margin-bottom: 1em;
 }
 
-/* line 77, ../sass/screen.scss */
+/* line 119, ../sass/screen.scss */
+article p {
+  line-height: 1.2em;
+}
+
+/* line 125, ../sass/screen.scss */
 #logo img {
   width: 100%;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 131, ../sass/screen.scss */
 .fll {
   float: left;
 }

@@ -1,0 +1,62 @@
+/*
+Syntax error: File to import not found or unreadable: susy.
+              Load path: E:/xampp/htdocs/su-design/sass
+        on line 4 of _base.scss
+        from line 4 of screen.scss
+
+1: // ---------------------------------------------------------------------------
+2: // Imports
+3: 
+4: @import "base";
+5: @import "compass/reset";
+6: @import "compass/css3/border-radius";
+7: @import "compass/css3/box-shadow";
+8: 
+9: @import "../stylesheets/fontello.css";
+
+Backtrace:
+_base.scss:4
+screen.scss:4
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/import_node.rb:67:in `rescue in import'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/import_node.rb:45:in `import'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/import_node.rb:28:in `imported_file'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/import_node.rb:37:in `css_import?'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:217:in `visit_import'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:227:in `block in visit_import'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:227:in `map'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:227:in `visit_import'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/tree/root_node.rb:20:in `render'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/engine.rb:315:in `_render'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/engine.rb:262:in `render'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:201:in `each'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/plugin.rb:81:in `update_stylesheets'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/exec.rb:425:in `watch_or_update'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/exec.rb:307:in `process_result'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/exec.rb:41:in `parse'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/lib/sass/exec.rb:21:in `parse!'
+E:/Programme/Ruby200-x64/lib/ruby/gems/2.0.0/gems/sass-3.2.7/bin/scss:9:in `<top (required)>'
+E:/Programme/Ruby200-x64/bin/scss:23:in `load'
+E:/Programme/Ruby200-x64/bin/scss:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: File to import not found or unreadable: susy.\A               Load path: E:/xampp/htdocs/su-design/sass\A         on line 4 of _base.scss\A         from line 4 of screen.scss\A \A 1: // ---------------------------------------------------------------------------\A 2: // Imports\A 3: \A 4: @import \"base\";\A 5: @import \"compass/reset\";\A 6: @import \"compass/css3/border-radius\";\A 7: @import \"compass/css3/box-shadow\";\A 8: \A 9: @import \"../stylesheets/fontello.css\";"; }

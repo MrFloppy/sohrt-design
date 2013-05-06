@@ -11,19 +11,61 @@
 /* -------------------------------------------------------------------------*/
 /* Layout */
 
+html {
+  font-size: 1.1875em; /* 1 */
+  -webkit-text-size-adjust: 1.1875em; /* 2 */
+  -ms-text-size-adjust: 1.1875em; /* 2 */
+}
+
 body {
   background-image:url("../image/yellow_bg.png");
+  font-family: 'Open Sans', sans-serif;
+  //font-size: 1.188em;
+  line-height: 1.632em;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  margin: 0.67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin: 0.83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  font-weight: bold;
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+  font-weight: bold;
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: 0.83em;
+  font-weight: bold;
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: 0.75em;
+  font-weight: bold;
+  margin: 2.33em 0;
 }
 
 #page {
   @include container;
   @include susy-grid-background;
-  //border: 1px solid black;
-  //@include border-radius(10px);
-  margin-top: 1em;
+  margin: 1em auto;
   padding: 0;
-  //overflow: hidden;
-  //border: solid 10px #000; /* fallback for browsers that don't understand rgba */
   background-color: rgba(255,255,255,0.4);/* slighly transparent white */
   border: solid 10px rgba(255,255,255,0.4); /*Very transparent black*/
 }
@@ -44,7 +86,7 @@ body {
   .submenu {
     background-color: white;
     display: none;
-    height: 20.5em;
+    //height: 20.5em;
     left: 2.5em;
     position: fixed;
     top: 0;
@@ -70,6 +112,12 @@ footer {
 section {
   p {
     margin-bottom: 1em;
+  }
+}
+
+article {
+  p {
+    line-height: 1.2em;
   }
 }
 

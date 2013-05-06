@@ -1,6 +1,10 @@
 var site = (function(){
 
-  var $menu;
+  var
+    $menu,
+    MENU_CLASS = "menu",
+    SUBMENU_CLASS = "submenu"
+  ;
 
   function activateMenu(){
     $menu.menuAim({
@@ -10,18 +14,25 @@ var site = (function(){
   };
 
   function activateSubmenu(entry) {
-    $(entry).children(".submenu").show();
-    console.log("activate");
+    $(entry).children("." + SUBMENU_CLASS).show();
+//    console.log("activate");
   };
 
   function deactivateSubmenu(entry) {
-    $(entry).children(".submenu").hide();
-    console.log("deactivate");
+    $(entry).children("." + SUBMENU_CLASS).hide();
+//    console.log("deactivate");
+  };
+
+  function calculateHeight() {
+    var menuHeight = $("." + MENU_CLASS).height();
+//    console.log(menuHeight);
+    $("." + SUBMENU_CLASS).height(menuHeight);
   };
 
   function init(){
-    $menu = $(".menu");
+    $menu = $("." + MENU_CLASS);
     activateMenu();
+    calculateHeight();
   };
 
   return {
