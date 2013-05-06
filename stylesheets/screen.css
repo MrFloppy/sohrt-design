@@ -78,55 +78,55 @@ html {
 
 /* line 20, ../sass/screen.scss */
 body {
-  background-image: url("../image/yellow_bg.png");
+  background-color: white;
   font-family: 'Open Sans', sans-serif;
   line-height: 1.632em;
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 28, ../sass/screen.scss */
+/* line 29, ../sass/screen.scss */
 h1 {
   font-size: 2em;
   font-weight: bold;
   margin: 0.67em 0;
 }
 
-/* line 34, ../sass/screen.scss */
+/* line 35, ../sass/screen.scss */
 h2 {
   font-size: 1.5em;
   font-weight: bold;
   margin: 0.83em 0;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 h3 {
   font-size: 1.17em;
   font-weight: bold;
   margin: 1em 0;
 }
 
-/* line 46, ../sass/screen.scss */
+/* line 47, ../sass/screen.scss */
 h4 {
   font-size: 1em;
   font-weight: bold;
   margin: 1.33em 0;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 h5 {
   font-size: 0.83em;
   font-weight: bold;
   margin: 1.67em 0;
 }
 
-/* line 58, ../sass/screen.scss */
+/* line 59, ../sass/screen.scss */
 h6 {
   font-size: 0.75em;
   font-weight: bold;
   margin: 2.33em 0;
 }
 
-/* line 64, ../sass/screen.scss */
+/* line 65, ../sass/screen.scss */
 #page {
   *zoom: 1;
   max-width: 59em;
@@ -145,10 +145,6 @@ h6 {
   background-clip: content-box;
   margin: 1em auto;
   padding: 0;
-  background-color: rgba(255, 255, 255, 0.4);
-  /* slighly transparent white */
-  border: solid 10px rgba(255, 255, 255, 0.4);
-  /*Very transparent black*/
 }
 /* line 38, ../../../../compass.app/lib/ruby/compass_0.12/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 #page:after {
@@ -156,10 +152,20 @@ h6 {
   display: table;
   clear: both;
 }
+/* line 74, ../sass/screen.scss */
+#page > header,
+#page > section,
+#page > footer {
+  border: 1px solid #cccccc;
+  background-color: rgba(204, 204, 204, 0.4);
+  /* slighly transparent white */
+  margin: 0.8em 0;
+  padding: 10px;
+}
 
-/* line 73, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 #navigation {
-  background-color: darkgrey;
+  background-color: lightgrey;
   left: 0px;
   position: fixed;
   top: 0px;
@@ -169,15 +175,17 @@ h6 {
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
-/* line 82, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 #navigation li {
   padding: 1em 0 1em 0.25em;
 }
-/* line 86, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 #navigation .submenu {
   background-color: white;
+  box-sizing: border-box;
   display: none;
   left: 2.5em;
+  padding: 0.5em;
   position: fixed;
   top: 0;
   width: 15em;
@@ -185,13 +193,13 @@ h6 {
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
-/* line 97, ../sass/screen.scss */
+/* line 110, ../sass/screen.scss */
 #navigation a {
   text-decoration: none;
-  color: white;
+  color: grey;
 }
 
-/* line 105, ../sass/screen.scss */
+/* line 118, ../sass/screen.scss */
 header,
 section,
 footer {
@@ -200,29 +208,33 @@ footer {
   margin-right: 1.69492%;
   display: inline;
 }
-/* line 107, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 header p,
 section p,
 footer p {
   padding-right: 1em;
 }
 
-/* line 113, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 section p {
   margin-bottom: 1em;
 }
 
-/* line 119, ../sass/screen.scss */
+/* line 133, ../sass/screen.scss */
 article p {
   line-height: 1.2em;
 }
 
-/* line 125, ../sass/screen.scss */
+/* line 138, ../sass/screen.scss */
+#logo {
+  float: left;
+}
+/* line 140, ../sass/screen.scss */
 #logo img {
-  width: 100%;
+  margin-right: 5em;
 }
 
-/* line 131, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 .fll {
   float: left;
 }

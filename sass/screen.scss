@@ -18,7 +18,8 @@ html {
 }
 
 body {
-  background-image:url("../image/yellow_bg.png");
+  //background-image:url("../image/yellow_bg.png");
+  background-color: white;
   font-family: 'Open Sans', sans-serif;
   //font-size: 1.188em;
   line-height: 1.632em;
@@ -66,12 +67,21 @@ h6 {
   @include susy-grid-background;
   margin: 1em auto;
   padding: 0;
-  background-color: rgba(255,255,255,0.4);/* slighly transparent white */
-  border: solid 10px rgba(255,255,255,0.4); /*Very transparent black*/
+  //border: solid 10px rgba(255,255,255,0.4); /*Very transparent black*/
+
+  > header,
+  > section,
+  > footer {
+    border: 1px solid rgba(204, 204, 204, 1);
+    //@include box-shadow(rgba(255,255,255,0.6) 5px 5px 5px);
+    background-color: rgba(204, 204, 204, 0.4);/* slighly transparent white */
+    margin: 0.8em 0;
+    padding: 10px;
+  }
 }
 
 #navigation {
-  background-color: darkgrey;
+  background-color: lightgrey;
   left: 0px;
   position: fixed;
   top: 0px;
@@ -85,18 +95,21 @@ h6 {
 
   .submenu {
     background-color: white;
+    box-sizing: border-box;
     display: none;
     //height: 20.5em;
     left: 2.5em;
+    padding: 0.5em;
     position: fixed;
     top: 0;
     width: 15em;
+    //@include box-shadow(red 5px 0px 10px);
     @include single-box-shadow;
   }
 
   a {
     text-decoration: none;
-    color: white;
+    color: grey;
   }
 }
 
@@ -104,6 +117,7 @@ header,
 section,
 footer {
   @include span-columns(12);
+
   p {
     padding-right: 1em;
   }
@@ -122,8 +136,9 @@ article {
 }
 
 #logo {
+  float: left;
   img {
-    width: 100%;
+    margin-right: 5em;
   }
 }
 
