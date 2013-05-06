@@ -5,6 +5,7 @@
 @import "compass/reset";
 @import "compass/css3/border-radius";
 @import "compass/css3/box-shadow";
+@import "compass/css3/transition";
 
 @import "../stylesheets/fontello.css";
 
@@ -91,6 +92,16 @@ h6 {
 
   li {
     padding: 1em 0 1em 0.25em;
+    @include transition-property(all);
+    @include transition-duration(0.5s);
+
+    &:hover {
+      background-color: white;
+    }
+
+    a {
+      cursor: default;
+    }
   }
 
   .submenu {
@@ -111,6 +122,20 @@ h6 {
     text-decoration: none;
     color: grey;
   }
+}
+
+#logo {
+  float: left;
+  img {
+    margin-right: 5em;
+  }
+}
+
+#float-logo {
+  display: none;
+  background-color: rgba(204, 204, 204, 1);/* slighly transparent white */
+  position: fixed;
+  top: 0;
 }
 
 header,
@@ -135,12 +160,6 @@ article {
   }
 }
 
-#logo {
-  float: left;
-  img {
-    margin-right: 5em;
-  }
-}
 
 //Helper Classes
 .fll {

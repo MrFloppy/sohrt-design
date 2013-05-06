@@ -40,9 +40,41 @@ var site = (function(){
   }
 })();
 
+var floatingTop = (function(){
+  var yOffset;
+
+  function getCurrentScroll(){
+    yOffset = self.pageYOffset;
+  };
+
+  function showTop(){
+    getCurrentScroll();
+    if (yOffset >= 155) {
+      if($("#float-logo").is(':hidden')) {
+        $("#float-logo").slideDown(200);
+      }
+    } else if (yOffset < 155) {
+      if($("#float-logo").is(':visible')) {
+        $("#float-logo").slideUp(200);
+      }
+    }
+
+  };
+
+  return {
+    init:showTop
+  }
+
+})();
+
 $(window).ready(function(){
   site.init();
   $(document).click(function() {
     $(".submenu").hide();
   });
+});
+
+
+$(window).scroll(function(){
+  floatingTop.init();
 });

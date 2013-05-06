@@ -66,7 +66,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 /* -------------------------------------------------------------------------*/
 /* Layout */
-/* line 14, ../sass/screen.scss */
+/* line 15, ../sass/screen.scss */
 html {
   font-size: 1.1875em;
   /* 1 */
@@ -76,7 +76,7 @@ html {
   /* 2 */
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 body {
   background-color: white;
   font-family: 'Open Sans', sans-serif;
@@ -84,49 +84,49 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 h1 {
   font-size: 2em;
   font-weight: bold;
   margin: 0.67em 0;
 }
 
-/* line 35, ../sass/screen.scss */
+/* line 36, ../sass/screen.scss */
 h2 {
   font-size: 1.5em;
   font-weight: bold;
   margin: 0.83em 0;
 }
 
-/* line 41, ../sass/screen.scss */
+/* line 42, ../sass/screen.scss */
 h3 {
   font-size: 1.17em;
   font-weight: bold;
   margin: 1em 0;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 h4 {
   font-size: 1em;
   font-weight: bold;
   margin: 1.33em 0;
 }
 
-/* line 53, ../sass/screen.scss */
+/* line 54, ../sass/screen.scss */
 h5 {
   font-size: 0.83em;
   font-weight: bold;
   margin: 1.67em 0;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 60, ../sass/screen.scss */
 h6 {
   font-size: 0.75em;
   font-weight: bold;
   margin: 2.33em 0;
 }
 
-/* line 65, ../sass/screen.scss */
+/* line 66, ../sass/screen.scss */
 #page {
   *zoom: 1;
   max-width: 59em;
@@ -152,7 +152,7 @@ h6 {
   display: table;
   clear: both;
 }
-/* line 74, ../sass/screen.scss */
+/* line 75, ../sass/screen.scss */
 #page > header,
 #page > section,
 #page > footer {
@@ -163,7 +163,7 @@ h6 {
   padding: 10px;
 }
 
-/* line 83, ../sass/screen.scss */
+/* line 84, ../sass/screen.scss */
 #navigation {
   background-color: lightgrey;
   left: 0px;
@@ -175,11 +175,27 @@ h6 {
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
-/* line 92, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 #navigation li {
   padding: 1em 0 1em 0.25em;
+  -webkit-transition-property: all;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  transition-property: all;
+  -webkit-transition-duration: 0.5s;
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
-/* line 96, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
+#navigation li:hover {
+  background-color: white;
+}
+/* line 102, ../sass/screen.scss */
+#navigation li a {
+  cursor: default;
+}
+/* line 107, ../sass/screen.scss */
 #navigation .submenu {
   background-color: white;
   box-sizing: border-box;
@@ -193,13 +209,31 @@ h6 {
   -moz-box-shadow: 0px 0px 5px #333333;
   box-shadow: 0px 0px 5px #333333;
 }
-/* line 110, ../sass/screen.scss */
+/* line 121, ../sass/screen.scss */
 #navigation a {
   text-decoration: none;
   color: grey;
 }
 
-/* line 118, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
+#logo {
+  float: left;
+}
+/* line 129, ../sass/screen.scss */
+#logo img {
+  margin-right: 5em;
+}
+
+/* line 134, ../sass/screen.scss */
+#float-logo {
+  display: none;
+  background-color: #cccccc;
+  /* slighly transparent white */
+  position: fixed;
+  top: 0;
+}
+
+/* line 143, ../sass/screen.scss */
 header,
 section,
 footer {
@@ -208,33 +242,24 @@ footer {
   margin-right: 1.69492%;
   display: inline;
 }
-/* line 121, ../sass/screen.scss */
+/* line 146, ../sass/screen.scss */
 header p,
 section p,
 footer p {
   padding-right: 1em;
 }
 
-/* line 127, ../sass/screen.scss */
+/* line 152, ../sass/screen.scss */
 section p {
   margin-bottom: 1em;
 }
 
-/* line 133, ../sass/screen.scss */
+/* line 158, ../sass/screen.scss */
 article p {
   line-height: 1.2em;
 }
 
-/* line 138, ../sass/screen.scss */
-#logo {
-  float: left;
-}
-/* line 140, ../sass/screen.scss */
-#logo img {
-  margin-right: 5em;
-}
-
-/* line 146, ../sass/screen.scss */
+/* line 165, ../sass/screen.scss */
 .fll {
   float: left;
 }
